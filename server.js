@@ -7,7 +7,7 @@ app.use(Express.json());
 
 app.post('/enviar-nombre', (req, res)=>{
     let { nombre } = req.body;
-    console.log(`nombre: ${nombre}`);
+    console.log(`nombre recibido desde el navegador: ${nombre}`);
     res.sendStatus(200);
 });
 
